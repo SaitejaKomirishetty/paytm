@@ -16,6 +16,7 @@
     "lint": "turbo run lint"
   },
   "devDependencies": {
+    "@repo/tailwind-config": "^0.0.0",
     "prettier": "^3.2.5",
     "prisma": "latest",
     "tsx": "4.21.0",

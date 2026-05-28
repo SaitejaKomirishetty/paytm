@@ -6,6 +6,14 @@ import type { User } from "../generated/client";
 const DEFAULT_USERS = [
   // Add your own user to pre-populate the database with
   {
+    name:'saiteja',
+    email:'saiteja@gmail.com'
+  },
+  {
+    name : "Harkirath",
+    email: "harkirath@gmail.com",
+  },
+  {
     name: "Tim Apple",
     email: "tim@apple.com",
   },
