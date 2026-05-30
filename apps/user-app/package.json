@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "web",
+    "name": "user-app",
     "version": "1.0.0",
     "scripts": {
         "dev": "next dev",
@@ -10,11 +10,13 @@
     },
     "dependencies": {
         "@tailwindcss/postcss": "^4.3.0",
+        "bcrypt": "^6.0.0",
+        "jotai": "^2.11.0",
         "next": "16.2.0",
+        "next-auth": "^4.24.14",
         "postcss": "^8.4.31",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "jotai": "^2.11.0",
         "tailwindcss": "^4.3.0"
     },
     "devDependencies": {
@@ -23,6 +25,7 @@
         "@repo/eslint-config": "*",
         "@repo/tailwind-config": "*",
         "@repo/typescript-config": "*",
+        "@types/bcrypt": "^6.0.0",
         "@types/node": "^20.11.24",
         "@types/react": "^18.2.61",
         "@types/react-dom": "^18.2.19",
