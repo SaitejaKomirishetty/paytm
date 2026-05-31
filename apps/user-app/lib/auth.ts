@@ -36,7 +36,7 @@ export const authOptions = {
                         return {
                             id: existingUser.id.toString(),
                             name: existingUser.name,
-                            email: existingUser.number,
+                            email: existingUser.email,
                         };
                     }
                     return null;
@@ -49,16 +49,14 @@ export const authOptions = {
                             password: hashedPassword,
                         },
                     });
-
                     return {
                         id: user.id.toString(),
                         name: user.name,
-                        email: user.number,
+                        email: user.email,
                     };
                 } catch (e) {
                     console.error(e);
                 }
-
                 return null;
             },
         }),
@@ -67,6 +65,7 @@ export const authOptions = {
     callbacks: {
         // TODO: can u fix the type here? Using any is bad
         async session({ token, session }: any) {
+            console.log(token, session);
             session.user.id = token.sub;
 
             return session;
