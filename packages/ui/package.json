@@ -1,0 +1,25 @@
+{
+  "name": "@repo/ui",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./*": "./src/components/*.tsx"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@repo/tailwind-config": "*",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8.57.0",
+    "typescript": "5.5.4"
+  }
+}

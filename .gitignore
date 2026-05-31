@@ -36,3 +36,5 @@ apps/web/.env
 .turbo
 
 !.env.example
+
+.playwright-mcp

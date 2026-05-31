@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* Tailwind v4 ignores node_modules, so workspace packages are not auto-scanned.
+   Explicitly include @repo/ui's source (path is relative to this file). */
+@source "../ui/src";
+
 @theme {
   --color-blue-1000: #2a8af6;
   --color-purple-1000: #a853ba;
