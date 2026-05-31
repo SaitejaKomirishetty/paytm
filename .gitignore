@@ -34,3 +34,5 @@ apps/web/.env
 
 # turbo
 .turbo
+
+!.env.example
