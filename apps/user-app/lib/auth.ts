@@ -28,6 +28,9 @@ export const authOptions = {
                 });
 
                 if (existingUser) {
+                    console.log("password form db is ",existingUser.password)
+                    console.log("raw password from user is ",credentials.password);
+                    console.log("hashed password from the user is ",hashedPassword)
                     const passwordValidation = await bcrypt.compare(
                         credentials.password,
                         existingUser.password,
